@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth; 
+}
+.transition-navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+body{
+    background-color: rgba(5, 4, 4, 0.685);
+}
+.carditm img{
+   height: 400px;
+}
+source {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#navbar{
+    z-index: 1;
+}
+
+.slide{
+   
+    margin: auto;
+   
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+   
+
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 50s linear infinite;
+}
+.slideitm{
+    width: 190px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.slideitm img{
+    width: 80%;
+    transition: width 0.3s ease-in-out;
+}
+.slideitm img:hover{
+   width: 100%;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+#dropdown-button{
+    z-index: -1;
+}
+.bgimg{
+    width: 100%;
+     height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.bgimg img{
+    background-attachment: fixed;
+}
+
+.animechar .imganime {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.imganime:hover .overlay {
+    opacity: 1;
+}
+
+.animechar .imganime {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+.text p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.imganime:hover .overlay {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+.imganime {
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+   
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 10; 
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.imganime:hover .overlay {
+    transform: translateY(0);
+}
+
+.imganime img {
+    display: block;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+
+h1 {
+    color: #ffffff;
+    margin-top: 2.75rem;
+    font-size: 1.875rem;
+    padding: 2.5rem 0;
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+section {
+    padding: 9rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.carditm {
+    width: 24rem;
+    height: 24rem;
+    max-width: 20rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carditm:hover {
+    transform: translateY(-0.9rem);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carditm img {
+    padding: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #f7be38; 
+    color: #000000;
+    border: none;
+    border-radius: 0.375rem; 
+    padding: 0.625rem 1.25rem; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #f7be38cc; 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(247, 190, 56, 0.5); 
+}
+
+a.btn-watch, a.btn-save {
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    border-radius: 0.375rem; 
+    padding: 0.625rem 1.25rem; 
+    color: #ffffff; 
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-watch {
+    background-color: #fbbf24; 
+}
+
+a.btn-watch:hover {
+    background-color: #1d4ed8; 
+}
+
+a.btn-save {
+    background-color: #3b82f6;
+}
+
+a.btn-save:hover {
+    background-color: #1e40af; 
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+    }
+
+   
+
+    .carditm {
+        background-color: #2a2a2a;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    h5 {
+        color: #e5e5e5; 
+    }
+
+    button {
+        background-color: #f7be38;
+        color: #000000;
+    }
+
+    a.btn-watch {
+        background-color: #fbbf24;
+    }
+
+    a.btn-save {
+        background-color: #3b82f6;
+    }
+}
+
+
+.backgr{
+    background-color: #0000004d;
+    width: 96%;
+    margin: auto auto 50px auto;
+  
+    border-radius: 20px;
+    padding-bottom: 30px;
+    border-width: 2px;
+    border-color: #db721dc7;
+}
+.gradient-text {
+  
+    background: linear-gradient(90deg, #ff8800, #000000a9); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carditm {
+    perspective: 1000px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carditm-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carditm:hover .carditm-inner {
+    transform: rotateY(15deg) rotateX(15deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.carditm img {
+    transition: transform 0.3s ease;
+}
+
+.carditm:hover img {
+    transform: scale(1.05);
+}
